@@ -1,0 +1,49 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 90px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+}
+
+input {
+  background-color: rgb(245, 245, 245);
+  height: 26px;
+  border-radius: 20px;
+  padding: 4px;
+  border: 2px solid rgba(236, 236, 236, 0.829);
+  appearance: none;
+  cursor: pointer;
+  padding-left: 50px;
+
+  font-size: 1em;
+  width: 100%;
+}
+
+input :hover,
+input:focus {
+  outline: none;
+  border: 2px solid #60a5fa;
+}
+
+#search-icon {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
