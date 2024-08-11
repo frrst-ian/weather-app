@@ -3,6 +3,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "montserrat_alternatesregular";
+  src: url("assets/fonts/montserratalternates-regular-webfont.woff2")
+      format("woff2"),
+    url("assets/fonts/montserratalternates-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
 }
@@ -20,6 +29,7 @@ body {
   width: 100%;
   max-width: 300px;
   height: 100vh;
+  text-align: center;
 }
 
 input {
@@ -33,6 +43,7 @@ input {
   padding-left: 50px;
 
   font-size: 1em;
+  font-family: "montserrat_alternatesregular";
   width: 100%;
 }
 
@@ -46,4 +57,22 @@ input:focus {
   position: absolute;
   left: 10px;
   top: 5px;
+}
+
+#error-message {
+  color: rgb(255, 38, 74);
+  font-size: 0.9em;
+  font-family: "montserrat_alternatesregular";
+  margin: 4px 0px 0px 11px;
+  width: 330px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 01);
+  transition: background-color 0.5s ease;
+  text-align: center;
+  background-color: #60a5fa;
 }
